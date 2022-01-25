@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./clock.css";
 
+// ty https://medium.com/programming-essentials/how-to-create-a-digital-clock-with-react-hooks-aa30f76cfe3f
+
 let Clock = () => {
     // const [date, setDate] = useState(new Date());
     // const [status, setStatus] = useState(true);
@@ -38,10 +40,11 @@ let Clock = () => {
             console.log(timerId);
         } else {
             console.log("mid clear");
+            clearInterval(timerId);
             console.log("timer not running");
         }
         return () => {
-            // Runs this First
+            // Runs this First, clears prevoius timer
             console.log("final clear");
             clearInterval(timerId);
         };
