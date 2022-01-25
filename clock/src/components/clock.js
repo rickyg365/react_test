@@ -36,16 +36,15 @@ let Clock = () => {
     useEffect(() => {
         const timerId = setInterval(refreshClock, 1000);
         if (status) {
-            console.log("running");
-            console.log(timerId);
+            console.log(`running: ${timerId}`);
         } else {
-            console.log("mid clear");
+            console.log(`stop timer, status false, ${timerId}`);
             clearInterval(timerId);
             console.log("timer not running");
         }
         return () => {
             // Runs this First, clears prevoius timer
-            console.log("final clear");
+            console.log(`stop previous timer, ${timerId}`);
             clearInterval(timerId);
         };
     }, [status]);
