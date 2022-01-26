@@ -17,6 +17,15 @@ code {
         monospace;
 }
 
+/* Get rid of blue highlight when tapping on mobile */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 * {
     margin: 0;
     padding: 0;
