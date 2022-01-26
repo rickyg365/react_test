@@ -7,8 +7,8 @@ function NavBar() {
             <h1 className="logo">Logo</h1>
             <ul className="nav-list">
                 <NavItem text="Home" />
-                <NavItem text="About" />
                 <NavItem text="Pricing" />
+                <NavItem text="About" />
                 <NavItem text="Contact" />
             </ul>
         </div>

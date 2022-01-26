@@ -1,5 +1,9 @@
 .nav-container {
-    width: 288px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: var(--nav-width);
     height: 100vh;
 
     display: flex;
@@ -7,15 +11,15 @@
     /* align-items: center; */
     /* justify-content: center; */
 
-    background: blue;
+    background: var(--bkg-clr);
     transition: 0.5s;
 }
 
 .logo {
     font-size: 2.5rem;
-    padding: 16px;
-    margin-bottom: 40px;
-    color: white;
+    padding: 16px 0;
+    margin-bottom: 35px;
+    color: lightsteelblue;
     /* align-self: flex-start; */
 }
 

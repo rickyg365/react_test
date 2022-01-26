@@ -8,7 +8,9 @@ function App() {
             {/* <NavItem /> */}
             <NavBar></NavBar>
             <main>
-                <h1>Main Body</h1>
+                <section>
+                    <h1>Main Body</h1>
+                </section>
             </main>
         </div>
     );
