@@ -2,9 +2,9 @@
     text-align: center;
 
     display: flex;
-
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 main {
@@ -13,7 +13,8 @@ main {
     padding: 64px 0;
 
     height: 200vh;
-    width: 100%;
+    width: calc(100vw - var(--nav-width));
+    /* max-width: var(--main-content-width); */
 
     display: flex;
     gap: 2rem;
@@ -30,9 +31,13 @@ main {
 }
 
 section {
-    padding: 1rem;
-
-    width: var(--main-content-width);
+    /* margin: 1rem; */
+    padding: 1rem 0rem;
+    width: 80%;
+    /*  max-width: var(--main-content-width); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     outline: 1px solid black;
 }
