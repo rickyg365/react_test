@@ -32,12 +32,21 @@ main {
 
 section {
     /* margin: 1rem; */
-    padding: 1rem 0rem;
+    padding: 1rem;
     width: 80%;
     /*  max-width: var(--main-content-width); */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
-    outline: 1px solid black;
+    /*  outline: 1px solid black; */
+}
+
+.display {
+    flex: 1;
+}
+
+.display > img {
+    width: 100%;
+    height: auto;
 }

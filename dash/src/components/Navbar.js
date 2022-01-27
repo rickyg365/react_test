@@ -1,9 +1,14 @@
 import "./Navbar.css";
+// import constructionLogo from "../construction_logo.svg";
 import NavItem from "./Item";
+import { logDOM } from "@testing-library/react";
 
 function NavBar() {
     return (
         <div className="nav-container">
+            {/* <div className="logo">
+                <img src={constructionLogo} alt="Under Construction Logo"></img>
+            </div> */}
             <h1 className="logo">Logo</h1>
             <ul className="nav-list">
                 <NavItem text="Home" />

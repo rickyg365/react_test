@@ -16,11 +16,16 @@
 }
 
 .logo {
-    font-size: 2.5rem;
-    padding: 16px 0;
+    font-size: 3rem;
+    padding: 2rem;
     margin-bottom: 35px;
-    color: lightsteelblue;
+    color: var(--main-clr);
     /* align-self: flex-start; */
+}
+
+.logo > img {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .nav-list {
