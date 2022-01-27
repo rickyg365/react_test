@@ -78,3 +78,17 @@
 
     pointer-events: none;
 }
+
+@media screen and (max-width: 900px) {
+    .item-container > a {
+        font-size: 2rem;
+        /* font-weight: ; */
+    }
+    .item-container:hover > a::before {
+        display: none;
+    }
+
+    .item-container:hover > a::after {
+        display: none;
+    }
+}
