@@ -1,5 +1,5 @@
 import "./App.css";
-import constructionLogo from "./construction_logo.svg";
+import constructionLogo from "./construction_logo_rect.svg";
 // import NavItem from "./components/Item";
 import NavBar from "./components/Navbar.js";
 

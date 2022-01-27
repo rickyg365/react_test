@@ -1,7 +1,6 @@
 import "./Navbar.css";
 // import constructionLogo from "../construction_logo.svg";
 import NavItem from "./Item";
-import { logDOM } from "@testing-library/react";
 
 function NavBar() {
     return (

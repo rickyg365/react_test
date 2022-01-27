@@ -11,9 +11,9 @@
 main {
     /* Equal to navbar width */
     margin-left: var(--nav-width);
-    padding: 64px 0;
+    /* padding: 64px 0; */
 
-    height: 200vh;
+    height: 100vh;
     width: calc(100vw - var(--nav-width));
     /* max-width: var(--main-content-width); */
 
@@ -22,7 +22,7 @@ main {
     flex-direction: column;
 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 
     /* background: orchid; */
     background: var(--main-clr);
@@ -34,7 +34,7 @@ main {
 section {
     /* margin: 1rem; */
     padding: 1rem;
-    width: 80%;
+    width: 100%;
     /*  max-width: var(--main-content-width); */
     display: flex;
     /* align-items: center; */
@@ -48,17 +48,22 @@ section {
 }
 
 .display > img {
-    width: 80%;
-    max-width: 1140px;
+    width: 90%;
+    /* max-width: 1140px; */
     height: auto;
 }
 
 @media screen and (max-width: 900px) {
     main {
         width: 100%;
+        height: 100vh;
         margin-left: 0;
+        padding-top: 96px;
+
+        justify-content: flex-start;
     }
     section {
+        padding: 0;
         width: 100%;
     }
     /* .display > img {
