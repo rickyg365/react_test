@@ -48,5 +48,6 @@ section {
 
 .display > img {
     width: 100%;
+    max-width: 1140px;
     height: auto;
 }
