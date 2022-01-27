@@ -6,16 +6,21 @@ import NavBar from "./components/Navbar.js";
 function App() {
     return (
         <div className="App">
+            <div className="banner">
+                <img src={constructionLogo} alt="Under Construction Logo" />
+                <h1 className="banner-txt">Check back Soon!</h1>
+            </div>
             {/* <NavItem /> */}
             <NavBar></NavBar>
             <main>
                 <section>
                     {/* <h1>Main Body</h1> */}
                     <div className="display">
-                        <img
+                        <h1>No Display</h1>
+                        {/* <img
                             src={constructionLogo}
                             alt="Under Construction Logo"
-                        ></img>
+                        ></img> */}
                     </div>
                 </section>
             </main>
