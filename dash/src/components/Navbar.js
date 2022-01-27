@@ -11,8 +11,8 @@ function NavBar() {
             <h1 className="logo">Logo</h1>
             <ul className="nav-list">
                 <NavItem text="Home" />
-                <NavItem text="Pricing" />
-                <NavItem text="About" />
+                <NavItem text="Projects" />
+                <NavItem text="Learning" />
                 <NavItem text="Contact" />
             </ul>
         </div>
