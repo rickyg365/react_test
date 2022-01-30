@@ -10,10 +10,11 @@
 
 main {
     /* Equal to navbar width */
+    margin-top: var(--top-padding);
     margin-left: var(--nav-width);
     /* padding: 64px 0; */
 
-    height: 100vh;
+    height: calc(100vh - var(--top-padding));
     width: calc(100vw - var(--nav-width));
     /* max-width: var(--main-content-width); */
 
@@ -33,8 +34,9 @@ main {
 
 section {
     /* margin: 1rem; */
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 100%;
+    height: 100%;
     /*  max-width: var(--main-content-width); */
     display: flex;
     /* align-items: center; */
@@ -59,7 +61,7 @@ section {
     justify-content: unset;
 
     /* background: rgba(255, 255, 18, 0.863); */
-    background: rgba(255, 255, 18, 1);
+    background: rgb(245, 172, 38);
     border-bottom: 1px solid rgba(25, 25, 25, 0.25);
     border-radius: 10px 0 0 10px;
 }
@@ -78,19 +80,20 @@ section {
     right: 50%;
     transform: translateX(50%);
 
-    color: orange;
-    text-shadow: 1px 1px 1px black;
+    color: black;
+    /* text-shadow: 1px 1px 1px black; */
 }
 
 .display {
     flex: 1;
+    max-width: calc(100vw - var(--nav-width));
+    height: inherit;
 }
 
-.display > img {
+/* .display > img {
     width: 90%;
-    /* max-width: 1140px; */
     height: auto;
-}
+} */
 
 @media screen and (max-width: 900px) {
     main {
@@ -103,9 +106,10 @@ section {
         padding: 0;
         width: 100%;
     }
-    /* .display > img {
+    .display {
+        max-width: unset;
         width: 100%;
-    } */
+    }
 
     .banner {
         padding: 1.75rem 0;
