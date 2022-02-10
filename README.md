@@ -1,2 +1,2 @@
 # react_test
-a sample to host react code to test
+hosting dash directory on vercel
