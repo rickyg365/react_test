@@ -1,2 +1,2 @@
-# react_test
-hosting dash directory on vercel
+# React Hosting Test
+hosting dash directory via vercel
